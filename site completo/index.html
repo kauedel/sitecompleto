@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>senai</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Registre-se</h1>
+    <p>Por favor responda abaixo com suas informações</p>
+    <form method="post" action=''>
+      <fieldset>
+        <label for="first-name">Nome: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">sobrenome: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="new-password">Crie uma senha: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="age">Qual a sua idade?: <input id="age" type="number" name="age" min="13" max="120" /></label>
+        </label>
+        <label for="bio">Você gostaria de se lembrar de algo?:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="amnesia..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" />i <3 amostra steam</a>
+      </label>
+      <button type="submit" onclick="executa()">Continuar</button>
+    </form>
+  </body>
+</html>
